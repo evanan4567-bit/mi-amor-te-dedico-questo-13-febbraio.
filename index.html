@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>13 de Febrero | Para Ti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- PANTALLA INTRO WOW -->
+  <section class="intro-screen">
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+      <p class="intro-small">13 de febrero</p>
+      <h1 class="intro-title">Tengo algo que quiero decirte...</h1>
+      <p class="intro-text">
+        Pero primero, prométeme que lo verás hasta el final.
+      </p>
+      <button class="intro-button" id="enter-btn">
+        Estoy listo(a) 💌
+      </button>
+    </div>
+  </section>
+
+  <!-- UNIVERSO PRINCIPAL -->
+  <main class="universe">
+    <div class="universe-gradient"></div>
+
+    <!-- Sección mensaje grande -->
+    <section class="love-message">
+      <h2>Un universo que empieza contigo</h2>
+      <p>
+        13 de febrero, un día cualquiera para el mundo… pero conmigo tú lo vuelves diferente.
+        Lo llenas de risas, de momentos raros, de mensajes eternos y de silencios que dicen
+        “te quiero” sin usar palabras.
+      </p>
+      <p class="love-strong">
+        Mucho te quiero. Te amo. Te pienso. Te admiro. Te elijo.
+      </p>
+      <p>
+        Hoy solo quiero que entres a este pequeño universo y recuerdes que, aunque sea digital,
+        cada detalle está pensado para ti.
+      </p>
+    </section>
+
+    <!-- Sección ramo de fotos -->
+    <section class="bouquet-section">
+      <h2>Un ramo de recuerdos para ti</h2>
+      <p class="section-subtitle">
+        No son flores físicas, pero son momentos que florecen cada vez que los miramos.
+      </p>
+
+      <div class="bouquet">
+        <div class="stem stem-1"></div>
+        <div class="stem stem-2"></div>
+        <div class="stem stem-3"></div>
+        <div class="stem stem-4"></div>
+
+        <div class="petal petal-1">
+          <img src="img/foto1.jpg" alt="Foto 1">
+        </div>
+        <div class="petal petal-2">
+          <img src="img/foto2.jpg" alt="Foto 2">
+        </div>
+        <div class="petal petal-3">
+          <img src="img/foto3.jpg" alt="Foto 3">
+        </div>
+        <div class="petal petal-4">
+          <img src="img/foto4.jpg" alt="Foto 4">
+        </div>
+
+        <div class="center-heart">
+          <span>Te amo</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería adicional estilo universo -->
+    <section class="gallery-section">
+      <h2>Constelación de momentos</h2>
+      <p class="section-subtitle">
+        Cada foto es como una estrella: pequeña a la vista, enorme en lo que significa.
+      </p>
+
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="img/foto1.jpg" alt="Foto 1">
+          <figcaption>Tu sonrisa que enciende todo.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/foto2.jpg" alt="Foto 2">
+          <figcaption>Ese momento que quiero repetir mil veces.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/foto3.jpg" alt="Foto 3">
+          <figcaption>Donde el tiempo parece detenerse.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/foto4.jpg" alt="Foto 4">
+          <figcaption>Y aquí, donde entendí lo mucho que te quiero.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Sección video -->
+    <section class="video-section">
+      <h2>Y al final… nuestro pequeño universo en movimiento</h2>
+      <p class="section-subtitle">
+        Si llegaste hasta aquí, esto es para que lo veas con calma, con audífonos, y pensando solo en nosotros.
+      </p>
+
+      <!-- Si tu video es archivo local -->
+      <video controls class="love-video">
+        <source src="video/trend.mp4" type="video/mp4">
+        Tu navegador no soporta video.
+      </video>
+
+      <!-- Si usas YouTube, comenta el video de arriba y descomenta este bloque:
+      <div class="video-responsive">
+        <iframe
+          src="https://www.youtube.com/embed/ID_DEL_VIDEO"
+          title="Video 13 de febrero"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      -->
+
+      <p class="closing-text">
+        Gracias por existir, por quedarte, por leer, por ver y por sentir.
+        13 de febrero, pero contigo se siente a siempre.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Hecho con ❤️, con código y con todo mi cariño para ti.
+  </footer>
+
+  <script>
+    // Pequeño JS inline solo para manejar la intro
+    const intro = document.querySelector('.intro-screen');
+    const btn = document.getElementById('enter-btn');
+
+    btn.addEventListener('click', () => {
+      intro.classList.add('intro-hide');
+      setTimeout(() => {
+        intro.style.display = 'none';
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }, 900);
+    });
+  </script>
+</body>
+</html>
