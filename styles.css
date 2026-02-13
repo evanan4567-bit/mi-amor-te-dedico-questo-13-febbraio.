@@ -387,7 +387,7 @@ body {
 }
 .code-heart {
   max-width: 980px;
-  margin: 0 auto 3.5rem;
+  margin: 0 auto 3.5rem;  /* centra el bloque */
   padding: 2.4rem 2rem 2.8rem;
   background:
     radial-gradient(circle at 10% 0%, rgba(255, 179, 211, 0.22), transparent 55%),
@@ -398,7 +398,7 @@ body {
   box-shadow: 0 30px 90px rgba(0, 0, 0, 0.85);
   font-family: "JetBrains Mono", "Fira Code", monospace;
   backdrop-filter: blur(20px);
-  text-align: center;
+  text-align: center;  /* centra el contenido interno */
 }
 
 .code-heart h2 {
@@ -407,7 +407,7 @@ body {
 }
 
 .code-heart pre {
-  display: inline-block;
+  display: inline-block;   /* permite centrar el bloque de fórmulas */
   text-align: left;
   color: #ffb3d3;
   font-size: 1rem;
